@@ -33,6 +33,17 @@ twitter_place_div = twitter_html.find_all("div", {"class": "ProfileHeaderCard-lo
 twitter_url_div = twitter_html.find_all("div", {"class": "ProfileHeaderCard-url "})
 twitter_join_div = twitter_html.find_all("div", {"class": "ProfileHeaderCard-joinDate"})
 print twitter_bio_div, twitter_place_div, twitter_url_div, twitter_join_div
+#convert divs to strings to make it easier to manipulate them
+#must do individually since str function only accepts 1 argument
+twitter_url_string = str(twitter_url_div)
+twitter_join = str(twitter_join_div)
+twitter_place = str(twitter_place_div)
+twitter_bio = str(twitter_bio_div)
+#make a list out of the strings
+twitter_url_list = twitter_url_string.split("title")
+
+print len(twitter_url_list)
+
 
 
 	
