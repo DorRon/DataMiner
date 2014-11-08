@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<title> DataMiner </title>
-			<link rel="stylesheet" type="text/css" href="main.css">
-			<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-	</head>
+    		<title>Data Miner</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		</head>
 	<body>
-		<header>
-			<tt><h2> Data Mining Utility Tool </h2></tt>
-		</header>
-		<div>
-  			<h4> Required Information </h4>
-  			<input type="email" placeholder="Facebook User Name: "></input>
-  			<br>
-  			<input type="email" placeholder="Twitter Screen Name: "></input>
- 			<br>
- 			<input type="submit"></input>
+		<div class="container-fluid" >
+			<h2><center>Data Mining Utility Tool</center></h2>
+			<form role="form">												
+			<div class="form-group">
+				<div class="row">
+			                <div class="col-xs-6 col-xs-offset-3">
+    						<label for="Facebook">Facebook User Name:</label>
+    						<input type="email" class="form-control" id="Facebook"></input>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3">
+							<label for="Twitter">Twitter Screen Name:</label>
+							<input type="text" class="form-control" id="Twitter"></input>
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3">
+							<button type="submit" class="btn btn-info form-control"> <span class="glyphicon glyphicon-search"></span> Search </button>							</div>
+						</div>												
+					</div>
+			</form>
 		</div>
 	</body>
 </html>
