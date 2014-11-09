@@ -50,6 +50,27 @@ def website(github_username):
 
 	return website
 
+def date_joined(github_username):
+	github_url = "http://github.com/" + github_username
+	github_html = requests.get(github_url)
+	soup = BeautifulSoup(github_html.content)
+	date_joined = str(soup.find_all('time', {'class':'join-date'})[0])
+
+	index = date_joined.find('>') + 1
+
+	date_joined = date_joined[index:]
+
+	index = date_joined.find("<") 
+	date_joined = date_joined[:index]
+
+	return date_joined
 
 
-website('mikachoow21')
+
+
+
+
+
+
+
+
