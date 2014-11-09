@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/test.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/EasePack.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/TweenLite.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/easeljs-0.7.1.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/requestAnimationFrame.js"></script>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <body>
+      <canvas id="text" width="1000" height="100">
+      </canvas>
+      <canvas id="stage" width="1000" height="100">
+      </canvas>
+      <form class="pure-form pure-form-stacked" method="POST" action="/help">
+    <fieldset>
+        <legend>A Stacked Form</legend>
+
+        <label for="FB"></label>
+        <input id="FB" type="text" placeholder="Facebook">
+
+        <label for="IG"></label>
+        <input id="IG" type="text" placeholder="Instagram">
+
+        <label for="state">State</label>
+        <select id="state">
+            <option>AL</option>
+            <option>CA</option>
+            <option>IL</option>
+        </select>
+
+        <label for="remember" class="pure-checkbox">
+            <input id="remember" type="checkbox"> Remember me
+        </label>
+
+        <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+    </fieldset>
+</form>
+    </body>
+
+    <script src="static/test.js"></script>
+  </html>
+  

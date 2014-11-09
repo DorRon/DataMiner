@@ -1,9 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
 
-def getAll(github_username):
-	L=[name(github_username),website(github_username),email(github_username),date_joined(github_username),location(github_username)]
-	return L
 
 def email(github_username):
 	github_url = "http://github.com/" + github_username
@@ -86,7 +83,12 @@ def location(github_username):
 
 	return location
 
+def getAll(github_username):
+	#L=[name(github_username),website(github_username),email(github_username),date_joined(github_username),location(github_username)]
+	d={"Name": name(github_username),"Website" : website(github_username),"E-mail":email(github_username),"Joindate":date_joined(github_username),"Location":location(github_username)}	
+	return d
 
+#print getAll("mikachoow21")
 
 
 

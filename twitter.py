@@ -32,5 +32,5 @@ def getAll(tw_user_name):
 	twitter_user_url = twitter_url_div[0].a.get("title")
 	twitter_user_join = twitter_join_div[0].get("title")
 	twitter_user_bio = twitter_bio_div[0].text	
-	L=[twitter_user_url, twitter_user_join, twitter_user_place, twitter_user_bio]
-	return L
+	d={"URL":twitter_user_url, "JoinDate":twitter_user_join, "Location":twitter_user_place, "Bio":twitter_user_bio}
+	return d

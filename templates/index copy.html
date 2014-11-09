@@ -3,8 +3,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="static/test.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/EasePack.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/TweenLite.min.js"></script>
@@ -16,25 +15,25 @@
       </canvas>
       <canvas id="stage" width="1000" height="100">
       </canvas>
-      <form class="pure-form pure-form-aligned" id="form" method="POST">
+      <form class="pure-form pure-form-aligned" id="form" method="POST" name="form" action="http://localhost:5000/help">
         <fieldset>
           <div class="pure-control-group" id="IG">
-            <input type="text" placeholder="Instagram" onmouseover="createText('INSTAGRAM')" onmouseout="explode()"></input>
+            <input type="text" placeholder="Instagram" onmouseover="createText('INSTAGRAM')" name="IG" onmouseout="explode()"></input>
           </div>
           <div class="pure-control-group" id="SC">
-            <input type="text" placeholder="SoundCloud" onmouseover="createText('SOUNDCLOUD')" onmouseout="explode()"></input>
+            <input type="text" placeholder="SoundCloud" onmouseover="createText('SOUNDCLOUD')" name="SC" onmouseout="explode()"></input>
           </div>
           <div class="pure-control-group" id="RE">
-            <input type="text" placeholder="Reddit" onmouseover="createText('REDDIT')" onmouseout="explode()"></input>
+            <input type="text" placeholder="Reddit" onmouseover="createText('REDDIT')" name="RI" onmouseout="explode()"></input>
           </div>
           <div class="pure-control-group" id="FB">
-            <input type="text" placeholder="Facebook" onmouseover="createText('FACEBOOK')" onmouseout="explode()"></input>
+            <input type="text" placeholder="Facebook" onmouseover="createText('FACEBOOK')" name="FB" onmouseout="explode()"></input>
           </div>
           <div id="T" class="pure-control-group">
-            <input type="text" placeholder="Twitter" onmouseover="createText('TWITTER')" onmouseout="explode()"></input>
+            <input type="text" placeholder="Twitter" onmouseover="createText('TWITTER')" name="T" onmouseout="explode()"></input>
           </div>
           <div id="GH" class="pure-control-group">
-            <input type="text" placeholder="Github" onmouseover="createText('GITHUB')" onmouseout="explode()"></input>
+            <input type="text" placeholder="Github" onmouseover="createText('GITHUB')" name="GH" onmouseout="explode()"></input>
           </div>
           <div class="pure-control-group">
             <input type="submit" value="Search" /></input>
@@ -42,6 +41,7 @@
         </fieldset>
       </form>
     </body>
-    <script src="test.js"></script>
+
+    <script src="static/test.js"></script>
   </html>
   

@@ -10,4 +10,4 @@ def getAll(user):
 
 	s=soup.find_all("meta",{"itemprop":"image"})[0].get("content")
 
-	return s
+	return {"Image":s}

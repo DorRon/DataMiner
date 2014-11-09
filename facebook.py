@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from urllib2 import urlopen
-
+import ast
 ###############################
 ######### FACEBOOK ############
 ###############################
@@ -17,5 +17,6 @@ def getAll(fb_user_name):
 	#separates the json fields provided
 	L=[]
 	separated = info.split(",") 
-	for i in separated:
-		L+= [i]
+	d=ast.literal_eval(info)
+	return d
+#print getAll("micah.weitzman")

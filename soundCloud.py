@@ -33,7 +33,7 @@ def getAll():
 
 	for track in playlist2.tracks:
 		p2.append(track['title'].encode('utf-8'))
-	L=[sc_username]+p1+p2
-	return L
+	d={"Username":sc_username,"Playlist":"<br>".join(p1+p2)}
+	return D
 
-print sc_username
+#print sc_username

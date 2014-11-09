@@ -1,0 +1,55 @@
+body {
+  background: #eee;
+}
+
+* {
+  position: absolute;
+  margin: 0; padding: 0;
+}
+
+input[type="text"]{
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align:center;
+  font-size: 18px;
+  width: 200px;
+  left:200px;
+  text-transform: uppercase;
+}
+#FB{
+  top: -50px;
+
+}
+#T{
+  top:0px;
+}
+#GH{
+  top:50px;
+}
+#IG{
+  top:100px;
+}
+#SC{
+  top:150px;
+}
+#RE{
+  top:200px;
+}
+input[type="submit"] {
+  display: block;
+  width: 200px;
+  border: 0;
+  line-height: 35px;
+  height: 35px;
+  color: #fff;
+  background: mediumpurple;
+  font-size: 18px;
+  top: 250px;
+  left: 200px;
+  cursor: pointer;
+}
+
+form {
+  width: 600px;
+  height: 100px;
+}
