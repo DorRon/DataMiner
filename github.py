@@ -54,6 +54,7 @@ def date_joined(github_username):
 	github_url = "http://github.com/" + github_username
 	github_html = requests.get(github_url)
 	soup = BeautifulSoup(github_html.content)
+
 	date_joined = str(soup.find_all('time', {'class':'join-date'})[0])
 
 	index = date_joined.find('>') + 1
@@ -65,6 +66,21 @@ def date_joined(github_username):
 
 	return date_joined
 
+def location(github_username):
+	github_url = "http://github.com/" + github_username
+	github_html = requests.get(github_url)
+	soup = BeautifulSoup(github_html.content)
+
+	location = str(soup.find_all('li', {'itemprop':'homeLocation'})[0])
+
+	index = location.find('</span') + 7
+
+	location = location[index:]
+
+	index = location.find("<") 
+	location = location[:index]
+
+	return location
 
 
 
