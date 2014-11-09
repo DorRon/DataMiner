@@ -1,41 +1,46 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-    		<title>Data Miner</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-    		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		</head>
-	<body background = http://upload.wikimedia.org/wikipedia/commons/6/66/The_Leaning_Tower_of_Pisa_SB.jpeg>
-		<div class="container-fluid" >
-			<h2><center>Data Mining Utility Tool</center></h2>
-			<form role="form">												
-			<div class="form-group">
-				<div class="row">
-			                <div class="col-xs-6 col-xs-offset-3">
-    						<label for="Facebook">Facebook User Name:</label>
-    						<input type="text" class="form-control" id="Facebook"></input>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 col-xs-offset-3">
-							<label for="Twitter">Twitter Screen Name:</label>
-							<input type="text" class="form-control" id="Twitter"></input>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 col-xs-offset-3">
-							<label for="Github">Github User Name:</label>
-							<input type="text" class="form-control" id="Github"></input>
-						</div>
-					</div>
-					<br/>
-					<div class="row">
-						<div class="col-xs-6 col-xs-offset-3">
-							<button type="submit" class="btn btn-info form-control"> <span class="glyphicon glyphicon-search"></span> Search </button>
-						</div>
-					</div>												
-				</div>
-			</form>
-		</div>
-	</body>
-</html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="test.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/EasePack.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/TweenLite.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/easeljs-0.7.1.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/requestAnimationFrame.js"></script>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <body>
+      <canvas id="text" width="1000" height="100">
+      </canvas>
+      <canvas id="stage" width="1000" height="100">
+      </canvas>
+      <form class="pure-form pure-form-aligned" id="form" method="POST">
+        <fieldset>
+          <div class="pure-control-group" id="IG">
+            <input type="text" placeholder="Instagram" onfocus="createText('INSTAGRAM')"></input>
+          </div>
+          <div class="pure-control-group" id="SC">
+            <input type="text" placeholder="SoundCloud" onfocus="createText('SOUNDCLOUD')"></input>
+          </div>
+          <div class="pure-control-group" id="RE">
+            <input type="text" placeholder="Reddit" onfocus="createText('REDDIT')"></input>
+          </div>
+          <div class="pure-control-group" id="FB">
+            <input type="text" placeholder="Facebook" onfocus="createText('FACEBOOK')"></input>
+          </div>
+          <div id="T" class="pure-control-group">
+            <input type="text" placeholder="Twitter" onfocus="createText('TWITTER')"></input>
+          </div>
+          <div id="GH" class="pure-control-group">
+            <input type="text" placeholder="Github" onfocus="createText('GITHUB')"></input>
+          </div>
+          <div class="pure-control-group">
+            <input type="submit" value="Search" /></input>
+          </div>
+        </fieldset>
+      </form>
+    </body>
+    <script src="test.js"></script>
+  </html>
