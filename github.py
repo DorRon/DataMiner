@@ -1,6 +1,10 @@
 from bs4 import BeautifulSoup
 import requests
 
+def getAll(github_username):
+	L=[name(github_username),website(github_username),email(github_username),date_joined(github_username),location(github_username)]
+	return L
+
 def email(github_username):
 	github_url = "http://github.com/" + github_username
 	github_html = requests.get(github_url)

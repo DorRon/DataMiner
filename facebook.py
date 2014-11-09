@@ -4,17 +4,18 @@ from urllib2 import urlopen
 ###############################
 ######### FACEBOOK ############
 ###############################
+def getAll(fb_user_name):
+	#fb_user_name = raw_input("Enter your facebook username here: ")
+	fb_url = "http://graph.facebook.com/" + fb_user_name #to obtain specific username information
+	info = urlopen(fb_url).read()
 
-fb_user_name = raw_input("Enter your facebook username here: ")
-fb_url = "http://graph.facebook.com/" + fb_user_name #to obtain specific username information
-info = urlopen(fb_url).read()
+	#since we already know the JSON structure
+	#we can predict the fields and make the 
+	#information we obtained more presentable
+	#and easier to handle in the future.
 
-#since we already know the JSON structure
-#we can predict the fields and make the 
-#information we obtained more presentable
-#and easier to handle in the future.
-
-#separates the json fields provided
-separated = info.split(",") 
-for i in separated:
-	print i
+	#separates the json fields provided
+	L=[]
+	separated = info.split(",") 
+	for i in separated:
+		L+= [i]

@@ -1,5 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
+def getAll(reddit_username):
+	L=[link_karma(reddit_username),comment_karma(reddit_username)]
+	return L
 
 def link_karma(reddit_username):
 	reddit_url = "http://reddit.com/user/" + reddit_username
@@ -15,7 +18,7 @@ def link_karma(reddit_username):
 	index = link_karma.find("<") 
 	link_karma = link_karma[:index]
 
-	print link_karma
+	return link_karma
 
 def comment_karma(reddit_username):
 	reddit_url = "http://reddit.com/user/" + reddit_username
@@ -31,4 +34,4 @@ def comment_karma(reddit_username):
 	index = comment_karma.find("<") 
 	comment_karma = comment_karma[:index]
 
-	print comment_karma
+	return comment_karma

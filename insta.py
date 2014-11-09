@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 
-def image(user):
+
+def getAll(user):
 
 	r=requests.get("http://iconosquare.com/"+user)
 

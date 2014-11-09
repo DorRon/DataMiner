@@ -24,12 +24,16 @@ sc_username = client.get('/me').username
 # retrieve sets associated with soundcloud account
 playlist = client.get('/playlists/58581035')
 playlist2 = client.get('/playlists/58580922')
+def getAll():
+	p1=[]
+	p2=[]
+	# print each track from the playlists
+	for track in playlist.tracks:
+	    p1.append(track['title'].encode('utf-8'))
 
-# print each track from the playlists
-for track in playlist.tracks:
-    print track['title']
-
-for track in playlist2.tracks:
-	print track['title']
+	for track in playlist2.tracks:
+		p2.append(track['title'].encode('utf-8'))
+	L=[sc_username]+p1+p2
+	return L
 
 print sc_username
