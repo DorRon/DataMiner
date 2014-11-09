@@ -2,6 +2,10 @@
 
 import soundcloud
 
+###############################
+######### SoundCloud ##########
+###############################
+
 #encapsulation of strings for privacy & securityreasons
 __id = "c5806c6c3a854752e9950dd16123bcb7"
 __secret = "0e10af495c8b2000f8c3c29ec51abb7a"
