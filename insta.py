@@ -11,3 +11,5 @@ def getAll(user):
 	s=soup.find_all("meta",{"itemprop":"image"})[0].get("content")
 
 	return {"Image":s}
+
+print getAll("mikachoow21")

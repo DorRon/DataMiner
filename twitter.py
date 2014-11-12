@@ -34,3 +34,4 @@ def getAll(tw_user_name):
 	twitter_user_bio = twitter_bio_div[0].text	
 	d={"URL":twitter_user_url, "JoinDate":twitter_user_join, "Location":twitter_user_place, "Bio":twitter_user_bio}
 	return d
+print getAll("mikachoow21")

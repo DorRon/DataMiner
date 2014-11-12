@@ -88,7 +88,7 @@ def getAll(github_username):
 	d={"Name": name(github_username),"Website" : website(github_username),"E-mail":email(github_username),"Joindate":date_joined(github_username),"Location":location(github_username)}	
 	return d
 
-#print getAll("mikachoow21")
+print getAll("mikachoow21")
 
 
 

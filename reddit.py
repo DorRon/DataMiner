@@ -36,3 +36,5 @@ def comment_karma(reddit_username):
 def getAll(reddit_username):
 	d={"Link-Karma":link_karma(reddit_username),"Comment-Karma":comment_karma(reddit_username)}
 	return d
+
+print getAll("mikachoow21")

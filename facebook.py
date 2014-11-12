@@ -19,4 +19,4 @@ def getAll(fb_user_name):
 	separated = info.split(",") 
 	d=ast.literal_eval(info)
 	return d
-#print getAll("micah.weitzman")
+print getAll("micah.weitzman")
